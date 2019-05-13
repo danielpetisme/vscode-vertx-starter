@@ -1,0 +1,47 @@
+{
+	"name": "vscode-vertx-starter",
+	"displayName": "vscode-vertx-starter",
+	"description": "Create a Vert.x Project",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:vertxStarter.createVertxProject"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vertxStarter.createVertxProject",
+				"title": "Create a Vert.x project"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"@types/node-fetch": "^2.3.3",
+		"@types/request": "^2.48.1",
+		"@types/request-promise": "^4.1.43",
+		"@types/unzipper": "^0.9.2",
+		"request": "^2.88.0",
+		"request-promise": "^4.2.4",
+		"unzipper": "^0.9.11"
+	}
+}
