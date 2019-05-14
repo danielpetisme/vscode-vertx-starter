@@ -1,6 +1,7 @@
 # VSCode Vert.x Starter
 
 > If Visual Studio is on the hype, Vert.x is on the edge!
+
 VSCode Vertx Starter provide a new command to create Vert.x projects faster than light. It's proudly powered by https://start.vertx.io.
 
 ## Features
