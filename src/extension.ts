@@ -48,6 +48,7 @@ async function createVertxProject() {
 		return {
 			value: it.number,
 			label: it.number,
+			number: it.number,
 			exclusions: it.exclusions
 		};
 	});
@@ -153,7 +154,7 @@ async function createVertxProject() {
 		`artifactId=${artifactId}&` +
 		`buildTool=${buildTool}&` +
 		`language=${language}&` +
-		`vertxVersion=${vertxVersion}&` +
+		`vertxVersion=${vertxVersion.number}&` +
 		`vertxDependencies=${vertxDependencies.join(',')}&` +
 		`packageName=${packageName}&` +
 		`jdkVersion=${jdkVersion}`;

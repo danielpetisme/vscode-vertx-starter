@@ -1,65 +1,43 @@
-# vscode-vertx-starter README
+# VSCode Vert.x Starter
 
-This is the README for your extension "vscode-vertx-starter". After writing up a brief description, we recommend including the following sections.
+> If Visual Studio is on the hype, Vert.x is on the edge!
+VSCode Vertx Starter provide a new command to create Vert.x projects faster than light. It's proudly powered by https://start.vertx.io.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+![Screenshot](images/vscode-vertx-starter.gif)
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Create a Vert.x project
+- Customize the creation (Vert.x version, language, build tool, groupId, artifactId, package name, JDK version)
+- Search for dependencies
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- VSCode (version 1.33.0 or later)
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+// TODO
 
-For example:
+## Licensing
 
-This extension contributes the following settings:
+```
+Copyright 2019 Daniel Petisme <daniel.petisme@gmail.com>
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-## Known Issues
+    http://www.apache.org/licenses/LICENSE-2.0
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+## Credits
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+The extension was originally created by https://twitter.com/danielpetisme[Daniel Petisme].
 
 **Enjoy!**
