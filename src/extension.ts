@@ -2,7 +2,6 @@ import * as vscode from 'vscode';
 import * as path from "path";
 import * as unzipper from 'unzipper';
 import * as request from 'request-promise';
-import { QuickPickItem } from 'vscode';
 
 const API_URL = "https://start.vertx.io";
 const LANGUAGES = [{ label: "Java", value: "java", }, { label: "Kotlin", value: "kotlin" }];
