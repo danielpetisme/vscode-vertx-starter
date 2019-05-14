@@ -8,6 +8,7 @@ VSCode Vertx Starter provide a new command to create Vert.x projects faster than
 
 ![Screenshot](images/vscode-vertx-starter.gif)
 
+What you can do:
 - Create a Vert.x project
 - Customize the creation (Vert.x version, language, build tool, groupId, artifactId, package name, JDK version)
 - Search for dependencies
