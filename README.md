@@ -40,6 +40,6 @@ limitations under the License.
 ```
 ## Credits
 
-The extension was originally created by https://twitter.com/danielpetisme[Daniel Petisme].
+The extension was originally created by [Daniel Petisme](https://twitter.com/danielpetisme).
 
 **Enjoy!**
