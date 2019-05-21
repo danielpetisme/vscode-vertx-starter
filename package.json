@@ -1,0 +1,97 @@
+{
+	"name": "vscode-vertx-starter",
+	"displayName": "vscode-vertx-starter",
+	"description": "Create a Vert.x Project",
+	"version": "0.1.0",
+	"author": "Daniel Petisme",
+	"publisher": "danielpetisme",
+	"icon": "icons/icon.png",
+	"homepage": "https://github.com/danielpetisme/vscode-vertx-starter",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:danielpetisme/vscode-vertx-starter.git"
+	},
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"keywords": [
+		"java",
+		"vertx",
+		"vert.x",
+		"starter"
+	],
+	"activationEvents": [
+		"onCommand:vertxStarter.createVertxProject"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "vertxStarter.createVertxProject",
+				"title": "Create a Vert.x project"
+			}
+		],
+		"configuration": {
+			"title": "Vert.x Starter",
+			"properties": {
+				"vertx-starter.apiUrl": {
+					"default": "https://start.vertx.io",
+					"type": "string",
+					"pattern": "https?://.+",
+					"scope": "window",
+					"description": "Vert.x API base URL"
+				},
+				"vertx-starter.defaultGroupId": {
+					"default": "com.example",
+					"type": "string",
+					"pattern": "^[A-Za-z0-9_\\-.]+$",
+					"scope": "window",
+					"description": "Default Group Id"
+				},
+				"vertx-starter.defaultArtifactId": {
+					"default": "starter",
+					"type": "string",
+					"pattern": "^[A-Za-z0-9_\\-.]+$",
+					"scope": "window",
+					"description": "Default Artifact Id"
+				},
+				"vertx-starter.defaultPackageName": {
+					"default": "com.example.starter",
+					"type": "string",
+					"pattern": "^[A-Za-z0-9_\\-.]+$",
+					"scope": "window",
+					"description": "Default package name"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test",
+		"tslint": "tslint -t verbose src/*.ts"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"typescript-tslint-plugin": "^0.3.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"@types/node-fetch": "^2.3.3",
+		"@types/request": "^2.48.1",
+		"@types/request-promise": "^4.1.43",
+		"@types/unzipper": "^0.9.2",
+		"request": "^2.88.0",
+		"request-promise": "^4.2.4",
+		"unzipper": "^0.9.11"
+	}
+}
